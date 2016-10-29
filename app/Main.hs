@@ -5,7 +5,6 @@ import           Network.HTTP.Base (urlEncode)
 import           Network.Socket hiding (send, recv)
 import           Network.Socket.ByteString
 import           Options.Applicative
-import           System.Environment (getArgs)
 
 data Options = Options { host :: String
                        , port :: Int
