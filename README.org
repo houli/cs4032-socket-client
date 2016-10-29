@@ -1,0 +1,16 @@
+#+TITLE: CS4032 Socket Client
+#+OPTIONS: toc:nil
+
+** Build Instructions
+Make sure you have [[http://haskellstack.org][Stack]] installed first.
+#+BEGIN_SRC bash
+$ stack setup && stack build
+#+END_SRC
+
+** Running
+The program connects to a server running the echo PHP server. The host and the
+port to connect to as well as the message to send are specified as command line
+arguments. For example:
+#+BEGIN_SRC bash
+$ stack exec socket-client -- --message Hello --host localhost --port 8000
+#+END_SRC
